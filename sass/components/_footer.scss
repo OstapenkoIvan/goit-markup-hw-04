@@ -17,11 +17,11 @@
 
 .footer__contact {
   color: getColor("font-4");
+  fill: getColor("primary");
 
   &:hover,
   &:focus {
     color: getColor("primary");
-    fill: getColor("primary");
   }
 }
 
