@@ -18,7 +18,8 @@
     margin-right: 10px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: getColor("primary");
     border-radius: 50%;
   }
@@ -27,7 +28,8 @@
 .social-icons__img {
   fill: getColor("icon-1");
 
-  .social-icons__thumb:hover & {
+  .social-icons__thumb:hover &,
+  .social-icons__thumb:focus & {
     fill: getColor("font-3");
   }
 }

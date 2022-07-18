@@ -299,7 +299,7 @@ header {
 .social-icons__thumb:not(:last-child) {
   margin-right: 10px;
 }
-.social-icons__thumb:hover {
+.social-icons__thumb:hover, .social-icons__thumb:focus {
   background-color: #2196f3;
   border-radius: 50%;
 }
@@ -307,7 +307,7 @@ header {
 .social-icons__img {
   fill: #afb1b8;
 }
-.social-icons__thumb:hover .social-icons__img {
+.social-icons__thumb:hover .social-icons__img, .social-icons__thumb:focus .social-icons__img {
   fill: #ffffff;
 }
 
@@ -330,10 +330,10 @@ header {
 
 .footer__contact {
   color: rgba(255, 255, 255, 0.6);
+  fill: #2196f3;
 }
 .footer__contact:hover, .footer__contact:focus {
   color: #2196f3;
-  fill: #2196f3;
 }
 
 .footer__street {
@@ -367,6 +367,10 @@ header {
 .footer__icon {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+}
+
+.social-icons__thumb.footer__icon .social-icons__img {
+  fill: white;
 }
 
 .footer-subscribe {

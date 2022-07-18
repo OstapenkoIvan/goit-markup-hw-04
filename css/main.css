@@ -243,7 +243,10 @@ header {
 }
 
 .section-two__container {
-  padding: 25px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
   border-radius: 4px;
@@ -284,9 +287,10 @@ header {
   bottom: 0;
   left: 0;
   width: 100%;
-  text-align: center;
   padding-top: 27px;
   padding-bottom: 27px;
+  text-align: center;
+  font-size: inherit;
   text-transform: uppercase;
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
@@ -305,10 +309,11 @@ header {
 }
 
 .section-three__item {
+  padding-bottom: 30px;
   text-align: center;
   font-size: 16px;
-  padding-bottom: 30px;
   line-height: 1.187;
+  background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -349,7 +354,7 @@ header {
 .social-icons__thumb:not(:last-child) {
   margin-right: 10px;
 }
-.social-icons__thumb:hover {
+.social-icons__thumb:hover, .social-icons__thumb:focus {
   background-color: #2196f3;
   border-radius: 50%;
 }
@@ -357,7 +362,7 @@ header {
 .social-icons__img {
   fill: #afb1b8;
 }
-.social-icons__thumb:hover .social-icons__img {
+.social-icons__thumb:hover .social-icons__img, .social-icons__thumb:focus .social-icons__img {
   fill: #ffffff;
 }
 
@@ -375,14 +380,19 @@ header {
   padding: 15px 31px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  fill: #afb1b8;
 }
 .section-four__item:not(:last-child) {
   margin-right: 30px;
 }
 .section-four__item:hover {
   border: 1px solid #2196f3;
+}
+.section-four__item:hover .section-four__icon {
   fill: #2196f3;
+}
+
+.section-four__icon {
+  fill: #afb1b8;
 }
 
 .footer {
@@ -404,10 +414,10 @@ header {
 
 .footer__contact {
   color: rgba(255, 255, 255, 0.6);
+  fill: #2196f3;
 }
 .footer__contact:hover, .footer__contact:focus {
   color: #2196f3;
-  fill: #2196f3;
 }
 
 .footer__street {
@@ -441,6 +451,10 @@ header {
 .footer__icon {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+}
+
+.social-icons__thumb.footer__icon .social-icons__img {
+  fill: white;
 }
 
 .footer-subscribe {
