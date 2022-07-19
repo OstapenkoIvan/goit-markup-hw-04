@@ -13,23 +13,26 @@
 }
 
 .section-four__item {
-  padding: 15px 31px;
-  border: 1px solid getColor("icon-1");
-  border-radius: 4px;
+  width: calc((100% - 150px) / 6);
 
   &:not(:last-child) {
     margin-right: $section-padding-2;
   }
-
-  &:hover {
-    border: 1px solid getColor("primary");
-  }
-
-  &:hover .section-four__icon {
-    fill: getColor("primary");
-  }
 }
 
-.section-four__icon {
+.section-four__link {
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid getColor("icon-1");
+  border-radius: 4px;
   fill: getColor("icon-1");
+
+  &:hover,
+  &:focus {
+    border: 1px solid getColor("primary");
+    fill: getColor("primary");
+  }
 }

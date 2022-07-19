@@ -5,6 +5,12 @@
 }
 
 .social-icons__thumb {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-icons__thumb a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,24 +18,21 @@
   width: 44px;
   height: 44px;
 
-  cursor: pointer;
-
-  &:not(:last-child) {
-    margin-right: 10px;
-  }
+  border-radius: 50%;
+  transition: background-color 250ms $cubic-1;
 
   &:hover,
   &:focus {
     background-color: getColor("primary");
-    border-radius: 50%;
   }
 }
 
 .social-icons__img {
   fill: getColor("icon-1");
+  transition: fill 250ms $cubic-1;
 
-  .social-icons__thumb:hover &,
-  .social-icons__thumb:focus & {
+  .social-icons__thumb a:hover &,
+  .social-icons__thumb a:focus & {
     fill: getColor("font-3");
   }
 }
