@@ -225,7 +225,7 @@ header {
   margin-top: 30px;
   background-color: #2196f3;
 }
-.button-hero:hover {
+.button-hero:hover, .button-hero:focus {
   background-color: #188ce8;
 }
 
@@ -496,7 +496,7 @@ header {
   fill: #ffffff;
   background-color: #2196f3;
 }
-.footer-subscribe__submit:hover {
+.footer-subscribe__submit:hover, .footer-subscribe__submit:focus {
   background-color: #188ce8;
 }
 
